@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Title Tag -->
+    <title>Mzansi Tech Repairs | Gqeberha's Best Tech Repair Service</title>
+
+    <!-- SEO: Meta Description -->
+    <meta name="description" content="Mzansi Tech Repairs offers fast, affordable smartphone, laptop, and electronic repairs in Gqeberha, Eastern Cape. Book your repair online today.">
+
+    <!-- SEO: Meta Keywords -->
+    <meta name="keywords" content="tech repairs Gqeberha, phone repair Eastern Cape, laptop repair Gqeberha, screen replacement, Mzansi Tech Repairs">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mzansi Tech Repairs</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Book a Repair</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Fast & Reliable Repairs for Your Devices</h1>
+            <p>Specializing in Smartphones, Laptops, and Electronic Repairs in Gqeberha.</p>
+            <a href="enquiry.html" class="cta-button">Book Now</a>
+        </section>
+
+        <!-- ===================== DYNAMIC CONTENT: SEARCH FEATURE ===================== -->
+        <section class="search-section">
+            <h2>Search Our Repair Services</h2>
+            <input type="text" id="searchInput" placeholder="e.g. screen, battery, laptop...">
+            <div id="searchResults" class="search-results"></div>
+        </section>
+
+        <section class="intro">
+            <h2>Why Choose Us?</h2>
+            <p>Since 2021, we have provided high-quality repair services with a focus on customer satisfaction and affordable pricing.</p>
+        </section>
+
+        <!-- ===================== INTERACTIVE ELEMENTS: FAQ ACCORDION ===================== -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <button class="accordion-btn">How long does a screen repair take?</button>
+                <div class="accordion-content">
+                    <p>Most screen replacements are completed within 1–2 hours depending on parts availability.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-btn">Do you offer a warranty on repairs?</button>
+                <div class="accordion-content">
+                    <p>Yes! All our repairs come with a standard guarantee on parts and workmanship.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-btn">Can I get a quote before committing?</button>
+                <div class="accordion-content">
+                    <p>Absolutely. Use our Book a Repair form and we will send you a free quote before any work begins.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== GALLERY WITH LIGHTBOX ===================== -->
+        <section class="gallery-section">
+            <h2>Our Work Showcase</h2>
+            <p>Click an image below to view it full-screen</p>
+            <div class="gallery-grid">
+                <img src="image1.jpg.webp" alt="Laptop screen repair in progress at Mzansi Tech Repairs" width="250" class="gallery-img" data-caption="Laptop screen repair in progress">
+                <img src="image2.jpg.webp" alt="Broken smartphone screen ready for repair" width="250" class="gallery-img" data-caption="Broken smartphone screen">
+                <img src="image3.jpg.webp" alt="Technician testing a circuit board with a multimeter" width="250" class="gallery-img" data-caption="Technician testing a repaired circuit board">
+            </div>
+        </section>
+
+        <!-- Lightbox Pop-up Overlay -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <span class="lightbox-prev" id="lightboxPrev">&#10094;</span>
+            <img id="lightboxImg" class="lightbox-content" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <span class="lightbox-next" id="lightboxNext">&#10095;</span>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mzansi Tech Repairs. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

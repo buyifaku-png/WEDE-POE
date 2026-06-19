@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Title Tag -->
+    <title>Contact Us | Mzansi Tech Repairs Gqeberha</title>
+
+    <!-- SEO: Meta Description -->
+    <meta name="description" content="Contact Mzansi Tech Repairs in Gqeberha. Visit our Govan Mbeki Avenue or Summerstrand branches, or send us a message online.">
+
+    <!-- SEO: Meta Keywords -->
+    <meta name="keywords" content="contact Mzansi Tech Repairs, Gqeberha repair shop location, tech repair contact Eastern Cape">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mzansi Tech Repairs</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Book a Repair</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="contact-header">
+            <h1>Get In Touch</h1>
+            <p>Visit us at our Gqeberha branches or send us a message below.</p>
+        </section>
+
+        <div class="contact-grid">
+            <div class="contact-details">
+                <h2>Our Locations</h2>
+                <div class="branch">
+                    <h3>Gqeberha Central (Main Branch)</h3>
+                    <p>123 Govan Mbeki Avenue, Gqeberha, 6001</p>
+                    <p><strong>Phone:</strong> 041 555 0123</p>
+                </div>
+                <div class="branch">
+                    <h3>Summerstrand Drop-off Point</h3>
+                    <p>University Way, Summerstrand, Gqeberha, 6001</p>
+                    <p><strong>Phone:</strong> 041 555 0987</p>
+                </div>
+                <div class="hours">
+                    <h3>Business Hours</h3>
+                    <p>Mon - Fri: 08:00 - 17:00</p>
+                    <p>Sat: 09:00 - 13:00</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Send a Message</h2>
+
+                <!-- Email Submission Process Feedback Container -->
+                <div id="contact-success" class="success-msg" style="display:none;">
+                    ✅ Your message was sent! An email notification summary has been generated.
+                </div>
+
+                <form id="contactForm" action="#" method="post" class="contact-form" novalidate>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="from_name" placeholder="Your Full Name">
+                    <span class="error-msg" id="contactNameError"></span>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="reply_to" placeholder="Your Email">
+                    <span class="error-msg" id="contactEmailError"></span>
+
+                    <label for="visit-date">Preferred Visit Date:</label>
+                    <input type="date" id="visit-date" name="visit-date">
+                    <span class="error-msg" id="contactDateError"></span>
+
+                    <label for="service">Service Required:</label>
+                    <select id="service" name="service">
+                        <option value="" disabled selected>Select a service...</option>
+                        <option value="screen">Screen Replacement</option>
+                        <option value="battery">Battery Replacement</option>
+                        <option value="software">Software Fix</option>
+                        <option value="laptop">Laptop Repair</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-msg" id="contactServiceError"></span>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+                    <span class="error-msg" id="contactSubjectError"></span>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we help you?"></textarea>
+                    <span class="error-msg" id="contactMessageError"></span>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ===================== INTERACTIVE MAP ===================== -->
+        <section class="map-section">
+            <h2>Find Us on the Map</h2>
+            <p>We are located on Govan Mbeki Avenue in the heart of Gqeberha.</p>
+
+            <div class="map-branch-selector">
+                <label for="branchSelect">Choose a branch to view:</label>
+                <select id="branchSelect">
+                    <option value="central">Gqeberha Central (Main Branch)</option>
+                    <option value="summerstrand">Summerstrand Drop-off Point</option>
+                </select>
+                <a id="directionsLink" href="https://www.google.com/maps/dir/?api=1&destination=Govan+Mbeki+Avenue+Gqeberha" target="_blank" rel="noopener" class="cta-button directions-btn">Get Directions</a>
+            </div>
+
+            <div class="map-wrapper">
+                <iframe
+                    id="branchMap"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.4!2d25.6022!3d-33.9608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad4b3b3b3b3b3%3A0x1e7ad4b3b3b3b3b3!2sGovan+Mbeki+Ave%2C+Gqeberha!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    title="Mzansi Tech Repairs Location">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mzansi Tech Repairs - Gqeberha. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

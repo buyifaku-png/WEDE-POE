@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Title Tag -->
+    <title>Book a Repair | Mzansi Tech Repairs Gqeberha</title>
+
+    <!-- SEO: Meta Description -->
+    <meta name="description" content="Book a smartphone, laptop, or electronics repair with Mzansi Tech Repairs in Gqeberha. Fill out our quick online booking form for a free quote.">
+
+    <!-- SEO: Meta Keywords -->
+    <meta name="keywords" content="book repair Gqeberha, laptop repair booking, phone repair quote, Mzansi Tech Repairs booking">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <header>
+        <nav>
+            <div class="logo">Mzansi Tech Repairs</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Book a Repair</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Book Your Repair</h1>
+        <p>Fill out the form below and our team in Gqeberha will get back to you with a quote.</p>
+
+        <!-- Feedback Container -->
+        <div id="enquiry-success" class="success-msg" style="display:none;">
+            ✅ Thank you! Your booking request has been processed successfully.
+        </div>
+
+        <form id="enquiryForm" action="#" method="post" novalidate>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error-msg" id="nameError"></span>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+            <span class="error-msg" id="emailError"></span>
+
+            <label for="device">Device Type:</label>
+            <select id="device" name="device">
+                <option value="" disabled selected>Select a device...</option>
+                <option value="smartphone">Smartphone</option>
+                <option value="laptop">Laptop</option>
+                <option value="other">Other Electronic</option>
+            </select>
+            <span class="error-msg" id="deviceError"></span>
+
+            <label for="repair-date">Preferred Repair Date:</label>
+            <input type="date" id="repair-date" name="repair-date">
+            <span class="error-msg" id="dateError"></span>
+
+            <label for="issue">Describe the Issue:</label>
+            <textarea id="issue" name="issue" rows="4"></textarea>
+            <span class="error-msg" id="issueError"></span>
+
+            <button type="submit" class="submit-btn">Send Booking Request</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mzansi Tech Repairs. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
